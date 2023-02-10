@@ -20,7 +20,7 @@
 
 ⚠️ `WIP`
 
-* --> `Starter_pack` : Is basically intros and stuffs for the kids, Getting started with Go? Just check that out.
+* --> `starter_pack` : Is basically intros and stuffs for the kids, Getting started with Go? Just check that out.
 * --> `use_cases` : Is thinkering box where I consider real world problems that I could solve with program.
 
 ### Final thoughts 
