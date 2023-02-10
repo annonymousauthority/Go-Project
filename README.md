@@ -16,6 +16,13 @@
 
 ` Well most of my codes will be written in Golang, but will also look at the possibliity of other frameworks and languages like Flask, Django, Python, C, C++ during the course of this journey`
 
+### Project Structure  
+
+⚠️ `WIP`
+
+* --> `Starter_pack` : Is basically intros and stuffs for the kids, Getting started with Go? Just check that out.
+* --> `use_cases` : Is thinkering box where I consider real world problems that I could solve with program.
+
 ### Final thoughts 
 
 ` I might have plans in the future to welcome contributions and possibly publish some of these APIs to public domain. But let's see how it goes `.
