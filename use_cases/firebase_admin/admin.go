@@ -24,21 +24,21 @@ func main() {
 func listUsers(ctx context.Context, client *auth.Client) {
 	// [START list_all_users_golang]
 	// Note, behind the scenes, the Users() iterator will retrive 1000 Users at a time through the API
-	iter := client.Users(ctx, "")
-	for {
-		user, err := iter.Next()
-		if err == iterator.Done {
-			break
-		}
-		if err != nil {
-			log.Fatalf("error listing users: %s\n", err)
-		}
-		log.Printf("read user user: %v\n", user)
-	}
+	// iter := client.Users(ctx, "")
+	// for {
+	// 	user, err := iter.Next()
+	// 	if err == iterator.Done {
+	// 		break
+	// 	}
+	// 	if err != nil {
+	// 		log.Fatalf("error listing users: %s\n", err)
+	// 	}
+	// 	log.Printf("read user user: %v\n", user)
+	// }
 
-	// Iterating by pages 100 users at a time.
-	// Note that using both the Next() function on an iterator and the NextPage()
-	// on a Pager wrapping that same iterator will result in an error.
+	// // Iterating by pages 100 users at a time.
+	// // Note that using both the Next() function on an iterator and the NextPage()
+	// // on a Pager wrapping that same iterator will result in an error.
 	pager := iterator.NewPager(client.Users(ctx, ""), 100, "")
 	for {
 		var users []*auth.ExportedUserRecord
@@ -47,7 +47,7 @@ func listUsers(ctx context.Context, client *auth.Client) {
 			log.Fatalf("paging error %v\n", err)
 		}
 		for _, u := range users {
-			log.Printf("read user user: %v\n", u)
+			log.Printf("pager, read user user: %v\n", string(u.UserRecord.UserInfo.DisplayName))
 		}
 		if nextPageToken == "" {
 			break
