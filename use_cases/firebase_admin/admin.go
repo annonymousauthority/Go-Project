@@ -82,6 +82,8 @@ func breakDownResume(resume string) (string, []string, []string, []string) {
 		Approach one.
 		-> Get the index for all target prefixes. Objectives -> Skills -> Work Experience -> Education
 		-> Search through and extract every information between as information for each prefix.
+
+		Question: Can concurrency work in extracting this value?
 	*/
 
 	// Approach one
@@ -120,10 +122,14 @@ func breakDownResume(resume string) (string, []string, []string, []string) {
 		}
 	}
 
-	fmt.Println(strings.Join(workExperience, "\n"))
-	fmt.Println(strings.Join(skills, "\n"))
-	fmt.Println(strings.Join(education, "\n"))
+	fmt.Println("Objective")
 	fmt.Println(objective)
+	fmt.Println("Work Experience")
+	fmt.Println(strings.Join(workExperience, "\n"))
+	fmt.Println("Skills")
+	fmt.Println(strings.Join(skills, "\n"))
+	fmt.Println("Education")
+	fmt.Println(strings.Join(education, "\n"))
 
 	return objective, skills, workExperience, education
 }
@@ -139,6 +145,6 @@ func main() {
 
 	listUsers(ctx, client)
 
-	userData = getUserDataByID(ctx, app, iDs[len(iDs)-7])
+	userData = getUserDataByID(ctx, app, iDs[len(iDs)-37])
 	_, _, _, _ = breakDownResume(userData.Resume)
 }
