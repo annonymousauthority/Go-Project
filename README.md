@@ -31,8 +31,8 @@
 ⚠️ `DIP`
 
 * --> `Article Slicing` : An algorithm to breakdown an article or paragraph text into sections. The assumptions are below:
-       --> The article has a known structure and flow
-       --> The headers are not repeated on the body of the section (This hasn't been fully tested, so my confidence level to it's working is low)
+       * The article has a known structure and flow
+       * The headers are not repeated on the body of the section (This hasn't been fully tested, so my confidence level to it's working is low)
 
 
 ### Final thoughts 
