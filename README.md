@@ -32,7 +32,7 @@
 
 * --> `Article Slicing` : An algorithm to breakdown an article or paragraph text into sections. The assumptions are below:
 
-* The article has a known structure and flow
+* The article has a known structure flow
 * The headers are not repeated on the body of the section (This hasn't been fully tested, so my confidence level to it's working is low)
 
 
