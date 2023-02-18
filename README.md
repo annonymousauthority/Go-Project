@@ -32,8 +32,15 @@
 
 * --> `Article Slicing` : An algorithm to breakdown an article or paragraph text into sections. The assumptions are below:
 
+Operating Parameters
 * The article has a known structure flow
 * The headers are not repeated on the body of the section (This hasn't been fully tested, so my confidence level to it's working is low)
+
+* --> `Fruit Punch Calories Tracker` : An app that tracks calories of fruits used to make a fruit punch. These are calories per 100grams of fruits.
+
+Operating paramaters
+* Each fruit carries a calorie value per 100grams 
+* list of fruits are seperated by commas e.g. `/extractFruits/mango,peach,strawberry`
 
 
 ### Final thoughts 
