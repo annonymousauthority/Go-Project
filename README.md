@@ -23,6 +23,19 @@
 * --> `starter_pack` : Is basically intros and stuffs for the kids, Getting started with Go? Just check that out.
 * --> `use_cases` : Is thinkering box where I consider real world problems that I could solve with program.
 
+
+### Discoveries 
+
+`This is where I document algorithms that have use_cases beyond my current application`
+
+⚠️ `DIP`
+
+* --> `Article Slicing` : An algorithm to breakdown an article or paragraph text into sections. The assumptions are below:
+
+* The article has a known structure flow
+* The headers are not repeated on the body of the section (This hasn't been fully tested, so my confidence level to it's working is low)
+
+
 ### Final thoughts 
 
 ` I might have plans in the future to welcome contributions and possibly publish some of these APIs to public domain. But let's see how it goes `.
